@@ -8,7 +8,7 @@ import java.util.*
 @Entity(tableName = "notes")
 data class Note(
     @PrimaryKey
-    @ColumnInfo(name = "dateAdded")
+    @ColumnInfo(name = "dateAdded")// buenas practicas
     val dateAdded: Date,
     @ColumnInfo(name = "noteText")
     val noteText: String,

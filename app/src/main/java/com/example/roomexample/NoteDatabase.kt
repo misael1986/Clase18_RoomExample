@@ -47,7 +47,7 @@ abstract class NoteDatabase : RoomDatabase() {
             return Room.databaseBuilder(
                 context.applicationContext,
                 NoteDatabase::class.java,
-                "notes_database"
+                "notes_database.sqlite"
             )
                 //.addMigrations(MIGRATION_1_2)
                 .build()
